@@ -3,7 +3,7 @@
 //  BlibliMobile-iOS
 //
 //  Created by Akanksha kumari on 18/09/20.
-//  Copyright © 2019 Global Digital Niaga, PT. All rights reserved.
+//  Copyright © 2020, PT. All rights reserved.
 //
 
 import Foundation
