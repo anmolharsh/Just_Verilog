@@ -2,8 +2,8 @@
 //  ImageDownloader.swift
 //  SearchResult
 //
-//  Created by Mayank Pawar on 26/09/20.
-//  Copyright © 2020 MoneyTap. All rights reserved.
+//  Created by Akanksha Kumari on 26/09/20.
+//  Copyright © 2020. All rights reserved.
 //
 
 import Foundation

@@ -2,8 +2,8 @@
 //  UIFontExtension.swift
 //  BlibliMobile-iOS
 //
-//  Created by Nathaniel Putera on 18/12/19.
-//  Copyright © 2019 Global Digital Niaga, PT. All rights reserved.
+//  Created by Akanksha kumari on 18/09/20.
+//  Copyright © 2020, PT. All rights reserved.
 //
 
 import Foundation
