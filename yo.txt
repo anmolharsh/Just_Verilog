@@ -1,0 +1,109 @@
+My name is Ayudh, roll no- 18cs10007
+My name is Anmol, roll no- 18CS10005
+
+string sing(char x)
+{
+	string s(1,x) ;
+	return s;
+}
+
+void print1D(lli a[], lli n)
+{
+	rep(i,0,n)cout<<a[i]<<" ";
+	cout<<endl;
+}
+
+void print2D(lli **dp, lli n, lli m)
+{
+	rep(i,0,n)
+	{
+		rep(j,0,m)
+		cout<<dp[i][j]<<" ";
+		cout<<endl;
+	}
+}
+
+void init1D(lli a[], lli n, lli k)
+{
+	rep(z,0,n)a[z]=k;
+}
+
+
+void init2D(lli **a, lli n, lli m, lli k)
+{
+	rep(i,0,n)
+	rep(j,0,m)
+	a[i][j]=k;
+}
+
+
+lli fastmod(lli base,lli exp, lli m=MOD)
+{
+	lli res=1;
+	while(exp)
+	{
+		if (exp&1ll)
+			res=(res*base)%m;
+		base=(base*base)%m;
+		exp/=2;
+	}
+	return res;
+}
+
+
+lli gcd(lli a, lli b) 
+{ 
+	if (a == 0) 
+		return b; 
+	return gcd(b % a, a); 
+} 
+
+lli logBase(lli m, lli b)
+{
+	lli count=0;
+	while(m>1)
+	{
+		++count;
+		m=m/b;
+	}
+	return count;
+}
+
+
+// stores smallest prime factor for every number 
+lli spf[MAXN]; 
+  
+// Calculating SPF (Smallest Prime Factor) for every 
+// number till MAXN. 
+// Time Complexity : O(nloglogn) 
+void sieve() 
+{ 
+	spf[1] = 1; 
+	for (lli i=2; i<MAXN; i++) 
+  
+		// marking smallest prime factor for every 
+		// number to be itself. 
+		spf[i] = i; 
+  
+	// separately marking spf for every even 
+	// number as 2 
+	for (lli i=4; i<MAXN; i+=2) 
+		spf[i] = 2; 
+  
+	for (lli i=3; i*i<MAXN; i++) 
+	{ 
+		// checking if i is prime 
+		if (spf[i] == i) 
+		{ 
+			// marking SPF for all numbers divisible by i 
+			for (lli j=i*i; j<MAXN; j+=i) 
+  
+				// marking spf[j] if it is not  
+				// previously marked 
+				if (spf[j]==j) 
+					spf[j] = i; 
+		} 
+	} 
+} 
+
+------ end --------
